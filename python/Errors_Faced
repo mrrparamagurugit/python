@@ -1,0 +1,21 @@
+WHEN IMPORTING TURTLE:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 39, in <module>
+    import _tkinter
+ImportError: No module named '_tkinter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./myturtle.py", line 2, in <module>
+    import turtle
+  File "/usr/lib/python3.4/turtle.py", line 107, in <module>
+    import tkinter as TK
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 41, in <module>
+    raise ImportError(str(msg) + ', please install the python3-tk package')
+ImportError: No module named '_tkinter', please install the python3-tk package
+
+
+--------------------------------------------------
+
