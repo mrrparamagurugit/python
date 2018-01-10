@@ -1,0 +1,4 @@
+
+ord - will give the ascii value of a char
+chr - will change the ascii to a char
+dir - will show the supported functions for that data type
