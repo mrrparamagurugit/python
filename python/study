@@ -2,3 +2,8 @@
 ord - will give the ascii value of a char
 chr - will change the ascii to a char
 dir - will show the supported functions for that data type
+* we can't have list as a dictionary key. 
+* we CAN have tuple as a dictionary key.
+* tuple(li)  will change a list to a tuple
+* split(some_punctuation_or_whitespace) will have a empty string in the resultant list ('')
+ ( print('hi,'.split(','))  will give output as ['hi', ''] )
