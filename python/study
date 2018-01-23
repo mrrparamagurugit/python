@@ -7,3 +7,21 @@ dir - will show the supported functions for that data type
 * tuple(li)  will change a list to a tuple
 * split(some_punctuation_or_whitespace) will have a empty string in the resultant list ('')
  ( print('hi,'.split(','))  will give output as ['hi', ''] )
+
+* An element can only appear only once in a set
+
+* Counters behave like dictionaries in many ways; they map from each key to the number of
+times it appears. As in dictionaries, the keys have to be hashable.
+Unlike dictionaries, Counters don’t raise an exception if you access an element that doesn’t
+appear. Instead, they return 0:
+
+* when accessing a key ( in Right Hand Side of a statement ) which is not present in a dictionary will result in " KeyError "
+  ( e.g: dic["one"]=1 ; dic["two"]=2 ; t= dic["oneeeeeeeee"]
+  
+* we can assign a value to new key in dictionary ( in Left Hand Side of a statement )
+  (e.g:  dic = {} ; dic["one"]=1  )
+	
+* defaultdict(list)  - will create a list as a value for the new key
+	e.g: dic defaultdict(<class 'list'>, {})  defaultdict(<class 'list'>, {'onee': [], 'two': 2, 'doo': [], 'one': 1})
+  defaultdict(float) - will create a float as a value for the new key 
+	e.g: (dic defaultdict(<class 'float'>, {}) 	defaultdict(<class 'float'>, {'one': 1, 'onee': 0.0, 'two': 2}))
