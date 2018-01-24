@@ -4,8 +4,8 @@ import socket
 
 clientid=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-host = socket.gethostname()                           
-
+#host = socket.gethostname()                           
+host = '10.0.2.15'
 port = 12346
 
 clientid.connect((host,port))
