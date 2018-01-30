@@ -25,3 +25,6 @@ appear. Instead, they return 0:
 	e.g: dic defaultdict(<class 'list'>, {})  defaultdict(<class 'list'>, {'onee': [], 'two': 2, 'doo': [], 'one': 1})
   defaultdict(float) - will create a float as a value for the new key 
 	e.g: (dic defaultdict(<class 'float'>, {}) 	defaultdict(<class 'float'>, {'one': 1, 'onee': 0.0, 'two': 2}))
+
+* to print mutiple values in a print , use % and pass all arguments as a single tuple.
+  ( print("count of %s:%d " %  (sys.argv[2] , value.count(sys.argv[2]))) )
