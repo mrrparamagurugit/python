@@ -92,10 +92,54 @@ def new_c_struct_splitter(value,local_result):
 
 #	result = local_result
 
+def comment_remover(value):
+	str_len=len(value)
+	start_index=-2
+	end_index=-2
+	comm_start= []
+	comm_end = []
+	newlist[]
+	found_flag=0
+	while True:
+		start_index = value.find("/*",start_index+2,str_len)
+		if start_index!=-1:
+			print("start:%d" % start_index)
+			comm_start.append(start_index)
+			end_index=value.find("*/",end_index+2,str_len)	
+			if end_index!=-1:
+				print("end:%d" % end_index)
+				found_flag=1
+				comm_end.append(end_index)
+			else:
+				return None
+		else:
+			break;
+
+	if found_flag:
+		if start[i+1] > end[i]:
+			newlist.append(start[i],end[i])
+		else:
+						
+
+	print(comm_start)
+	
+
 
 fd = open(sys.argv[1],'r')
 value = fd.read()
 new_c_struct_splitter(value,final_res)
 print(final_res)
 print(len(final_res))
+
+print("-----------------------------------")
+
+
+comment_remover(value)
+
+print("-----------------------------------")
+str_len = len(value)
+index= value.find("/*")
+print("\ntoatl len:%d index:%d\n" % (str_len,index))
+print("hello")
+
 
