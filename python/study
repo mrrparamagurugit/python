@@ -28,3 +28,17 @@ appear. Instead, they return 0:
 
 * to print mutiple values in a print , use % and pass all arguments as a single tuple.
   ( print("count of %s:%d " %  (sys.argv[2] , value.count(sys.argv[2]))) )
+
+* in C ,  a=b=10 means same value 10 will be assigned to both a and b variables.
+
+  in python a=b= [] means both will be pointing to same list. ( a and b will not be pointing to two different empty lists. both will point to same empty list ).
+  e.g: 
+	a=b= []
+	a.append("hi")
+	b.append("hello")
+	print(a)
+	output is: ['hi', 'hello']
+
+  both append is happening to the same list.
+
+
