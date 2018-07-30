@@ -42,3 +42,17 @@ appear. Instead, they return 0:
   both append is happening to the same list.
 
 
+* map ( arg1, agr2)  -   arg1 is a function or a lamba ,  arg2 - is iterable argument ( like list or string )
+	map will call arg1 (function or lamba )	by iterating the elements in arg2 ( one by one ) arg2.
+	e.g: refer map_to_getall_words_from_a_file.py
+
+
+* lambda - is a kind of inlinefunction/macro.  It always returns a expression . ( like what we return in a single statement )
+	lamba can be placed where a function(def) can't be. 1) as an element in a list. 2) as an argument to a function.
+
+	e.g: as an element is a list
+		L = [lambda x: x ** 2,
+         	lambda x: x ** 3,
+         	lambda x: x ** 4]
+	
+	Reference: http://www.bogotobogo.com/python/python_functions_lambda.php
